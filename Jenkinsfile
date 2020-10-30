@@ -6,6 +6,7 @@ pipeline{
         stages{
                 stage ("Clone git") {
                         steps {
+                               sh ' chmod +x cloneproject'
                                sh './cloneproject'
                         }
                 }
