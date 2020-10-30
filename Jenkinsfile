@@ -12,7 +12,7 @@ pipeline{
                 }
                 stage ("install Docker and docker-compose") {
                         steps {
-                                sh 'sudo apt update'
+//                                sh 'sudo apt update'
                                 sh 'curl https://get.docker.com | sudo bash'
                                 sh 'sudo usermod -aG docker $(whoami)'
                                 sh 'sudo apt update'
