@@ -6,7 +6,7 @@ pipeline{
         stages{
                 stage ("Clone git") {
                         steps {
-                               sh './clonefile'
+                               sh './cloneproject'
                         }
                 }
                 stage ("install Docker and docker-compose") {
